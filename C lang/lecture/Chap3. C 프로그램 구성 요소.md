@@ -82,6 +82,6 @@ printf("두수의 합: %d", sum);	// %d(decimal)는 출력형식
 scanf("%d", &x);	// %d : 형식 지정자, &x : 값을 저장할 변수
 ```
 
-변수 이름 앞에 **&(앰퍼샌드)**라는 주소 연산자가 있다. [그림 3 -17]
+변수 이름 앞에 **&(앰퍼샌드)**라는 주소 연산자가 있다. [출처](https://m.blog.naver.com/PostView.nhn?blogId=zzffgg&logNo=220663594667&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
 
 ![주소 연산자](http://mblogthumb4.phinf.naver.net/20160324_191/zzffgg_1458745246100vFQi7_PNG/3.png?type=w800)
