@@ -18,3 +18,15 @@ int는 함수가 출력하는 값의 타입이 정수(integer)라는 것을 의�
 
 > int, void 같은 용어는 특별한 의미를 가지는 단어들로 `예약어`, `키워드`라고 한다.
 
+
+
+```c
+#include <stdio.h>
+
+int main (void)
+{
+	printf("Hello!\n");	// '\n' newline
+    return 0;	// main을 끝내고 외부로 0을 반환 => 정상적인 종료
+}
+```
+
