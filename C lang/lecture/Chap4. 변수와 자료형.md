@@ -38,6 +38,7 @@ printf("자료형 x의 크기 : %d", sizeof(x));
 ```
 
 헤더파일 `stdio.h`를 소스 코드 안에 포함시켜줘~
+> [C언어 기본자료형의 크기와 범위](https://newmkka.tistory.com/69)
 
 <br>
 
