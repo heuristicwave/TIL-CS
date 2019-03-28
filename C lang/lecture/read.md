@@ -35,11 +35,13 @@ gcc -o 실행파일이름 파일이름.c
 
 
 
-## 추천 교재
+## 추천 교재 및 레퍼런스
 
 [C발라먹기](http://www.realhanbit.co.kr/books/149)
 
 구글아이디로 가입하고 구매하기를 누르면 끝!
+
+[씹어먹는 C언어 - 개념 및 c언어 레퍼런스](https://modoocode.com/notice/15)
 
 <br>
 
