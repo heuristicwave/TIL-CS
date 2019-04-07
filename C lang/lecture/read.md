@@ -77,6 +77,9 @@ printf("섭씨온도는 %f입니다", c_temp);
 printf("섭씨온도는 %f입니다", c_temp);
 ```
 
+
+[Visual Studio scanf 에러 해결](https://security-nanglam.tistory.com/116)
+
 <br>
 
 ## 도움이 되는 사이트
