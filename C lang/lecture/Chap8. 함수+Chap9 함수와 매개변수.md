@@ -162,6 +162,9 @@ int main()
 
 ### Hands-On
 p397 factorial.c (8장의 반복문을 재귀로 작성)
+
 p400 print_binary.c
+
 p401 gcd.c
+
 p404 hanoi_tower.c
