@@ -24,6 +24,12 @@ gcc -o 실행파일이름 파일이름.c
 // 예시
 // helloworld.c로 실행파일을 만드려면
 // gcc -o myprogram helloworld.c
+
+/// 헤더 파일을 포함하여 컴파일하기
+
+// 라이브러리 함수를 쓸경우 헤더파일을 포함하여 컴파일 해야 참조가 가능하다.
+-lm 을 포함한다.
+// gcc -o myprogram helloworld.c -lm
 ```
 
 
