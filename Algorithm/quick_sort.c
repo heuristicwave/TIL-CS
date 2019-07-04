@@ -8,6 +8,13 @@ void quick (int a[], int left, int right)
 	int right_cursor = right;
 	int pivot = a[(left_cursor + right_cursor) / 2];	// Select center pivot
 	
+	// line 12 ~ 16 Print split process
+	int i;
+	printf("a[%d] ~ a[%d] : {", left, right);
+	for (i = left; i <right; i++)
+		printf("%d ", a[i]);
+	printf("%d}\n", a[right]);
+
 	// Divide array a by pivot
 	do {
 		while(a[left_cursor] < pivot) left_cursor++;	// Move one space to the right after comparing with pivot
