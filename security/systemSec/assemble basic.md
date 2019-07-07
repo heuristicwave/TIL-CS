@@ -7,13 +7,13 @@
 **분석**
 
 ```assembly
-// AT&T
+; AT&T
 push	%rbp
 mov		%rsp, %rbp
 sub		$0x8, %rsp
-mov		$0x1, %rax	// 0x1를 rax로
+mov		$0x1, %rax	; 0x1를 rax로
 
-// intel은 AT&T와 반대이며 $, %가 없음
+; intel은 AT&T와 반대이며 $, %가 없음
 ```
 
 [인텔 메뉴얼](https://software.intel.com/en-us/articles/intel-sdm)
@@ -37,9 +37,9 @@ mov		$0x1, %rax	// 0x1를 rax로
 global_start
 	
 section .text
-_start:	// 스타트 함수 정의
-	push 	rbp			// rbp가 가진 값을 넣음
-	mov 	rbp, rsp	// rsp를 rbp로 옮김
+_start:	; 스타트 함수 정의
+	push 	rbp			; rbp가 가진 값을 넣음
+	mov 	rbp, rsp	; rsp를 rbp로 옮김
 	
 	mov		rsp, rbp
 	ret
@@ -50,21 +50,21 @@ _start:	// 스타트 함수 정의
 **nano helloworld.s**
 
 ```assembly
-section .data	// 문자열 데이터 저장
+section .data	; 문자열 데이터 저장
 	msg db "Hello World"
 	
 section .text	
 	global_start
 	
-_start:	// 스타트 함수 정의
-	mov rax, 1	// rax라는 레지스터에 1이라는 값을 (mov)
+_start:	; 스타트 함수 정의
+	mov rax, 1	; rax라는 레지스터에 1이라는 값을 (mov)
 	mov rdi, 1
 	mov rsi, msg
 	mov rdx, 12
-	syscall	// 여기까진 출력
+	syscall	; 여기까진 출력
 	mov rax, 60
-	mov rdi, 0	// 안전하게 종료
-	syscall	// 시스템 종료
+	mov rdi, 0	; 안전하게 종료
+	syscall	; 시스템 종료
 ```
 
 목적파일 및 실행파일
@@ -162,14 +162,20 @@ gcc -S -fno-stack-protector -mpreferred-stack-boundary=4 -z execstack -o sum.a s
 ### MOV
 
 -  mov [reg|addr], [imm|reg|mem]
--  값 이동
+-  값 이동 (MOV EAX, 100 - EAX에 100이라는 값을 넣음)
+-  연산을 포함할 수 없음
 
 
 
 ### LEA
 
 - LEA [reg], [mem]
+
 - 주소 이동
+
+- 연산을 포함하여 복사 ( LEA EAX, [EAX + 1000] )
+
+  -> EAX에 1000을 넣은 값을 다시 EAX에 삽입
 
 
 
@@ -192,8 +198,9 @@ gcc -S -fno-stack-protector -mpreferred-stack-boundary=4 -z execstack -o sum.a s
 
 #### call
 
-- call 다음에 있는 주소를 호출함
+- call 다음에 있는 주소를 호출했다가 다시 원래 위치로 돌아올 때 사용
 - call 다음 명령어 주소를 스택에 **PUSH**
+- 실행한 뒤에 끝나게 되면 RET에 저장하고 다시 원래 상태로 돌아옴
 
 
 
@@ -202,6 +209,7 @@ gcc -S -fno-stack-protector -mpreferred-stack-boundary=4 -z execstack -o sum.a s
 - 현재 RSP 가 가리키고 있는 값으로 점프한다.
 - 스택 최상위에 있는 값으로 점프한다.
 - RSP를 8증가 시킨다.
+- 현재 함수가 끝난 뒤에 돌아갈 주소를 지정하기 위해 사용
 
 
 
