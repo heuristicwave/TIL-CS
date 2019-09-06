@@ -48,6 +48,20 @@ LINUX / OSX
 
 
 
+### 폴더 권한
+
+**chmod 7537**
+
+| 주체        | 파일권한 | 내용                                                         |
+| ----------- | -------- | ------------------------------------------------------------ |
+| Owner(User) | r-s      | 소유자에 대한 setuid 권한은 4000, 읽기와 실행권한 5가 부여되어야함. |
+| Group       | -ws      | 그룹에 대한 setuid 권한은 2000, 쓰기와 실행권한 3이 부여되어야 함. |
+| Other user  | rwt      | "t"는 Sticky bit로 1000이 부여 "rwx"는 7이 부여되어야 한다.  |
+
+4천+2천+1천 으로 특수권한이 7천, 파일에대한 권한은 5,3,7 => 7537 		참고 : (4,2,1)
+
+
+
 ### 시간대 바꾸기
 
 ```shell
@@ -55,4 +69,8 @@ sudo rm -rf / etc/localtime
 sudo ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 date
 ```
+
+
+
+#### [update  안될때](https://unix.stackexchange.com/questions/429729/apt-get-update-error-in-kali-linux-after-dist-upgrade)
 
