@@ -25,15 +25,19 @@ chmod 4755 [File Name]
 ### [find 명령어](https://recipes4dev.tistory.com/156)
 
 ```shell
-find . -name [FILE]		// 현제 디렉토리 아래 모든 파일 및 하위 디렉토리에서 검색
-find / -name [FILE]		// 루트 디렉토리 아래 모든 파일 검색 (전체 시스템)
+find . -name [FILE]		# 현제 디렉토리 아래 모든 파일 및 하위 디렉토리에서 검색
+find / -name [FILE]		# 루트 디렉토리 아래 모든 파일 검색 (전체 시스템)
 
 find / -perm 4000	// 4000과 같은 퍼미션을 검색
-// (-4000 : 4000포함 권한 검색 / +4000 : 4000이 일부라도 포함된 권한 검색)
+# (-4000 : 4000포함 권한 검색 / +4000 : 4000이 일부라도 포함된 권한 검색)
 
-// 6000 : setuid & setgid
-// 2> /dev/null 에러제거 옵션
+# 6000 : setuid & setgid
+# 2> /dev/null 에러제거 옵션
 find / -perm +6000 -user [File] 2> /dev/null
+
+find / -size 2700c 2> /dev/null
+# unit
+# b: block / c: byte / k: kbyte
 ```
 
 
@@ -41,3 +45,23 @@ find / -perm +6000 -user [File] 2> /dev/null
 ### VI 와 쉘 명령어
 
 :!{shell command} – 쉘 명령를 vi 안에서 실행
+
+
+
+### 문자열 형태로 명령어 전달
+
+```shell
+"명령어;추가하려는 명령어"
+```
+
+
+
+#### finger
+
+사용자 계정 정보와 최근 로그인 정보, 이메일, 예약 작업 등을 미리 볼 수 있는 명령어
+
+```
+finger root
+finger @localhost
+```
+
