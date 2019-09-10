@@ -128,14 +128,23 @@ AES128 / 192 / 256, SEED 128 / 256
 
 5. 이후 p, q와 (p-1)(q-1) 값은 필요하지 않으므로 보안성을 위해 삭제
 <br>
-m은 N보다 작은 값으로 잘라낸 원문, c는 암호문 `c = m의e제곱 mod N`<br>
-암호문 c를 원문 m으로 복원하려면 비밀키 <N, d>로 연산 `m = c의d제곱 mod N`<br>
+
+m은 N보다 작은 값으로 잘라낸 원문, c는 암호문 `c = m의e제곱 mod N`
+<br>
+
+암호문 c를 원문 m으로 복원하려면 비밀키 <N, d>로 연산 `m = c의d제곱 mod N`
+<br>
 
 
 https://wkdtjsgur100.github.io/RSA-algorithm/
 <br>
 
 
+
 기타
 
+
+[RSA step by step](https://www.cryptool.org/en/cto-highlights/rsa-step-by-step)
+[bigNum_Converter](https://www.mobilefish.com/services/big_number/big_number.php)
+[RSA Calc](http://extranet.cryptomathic.com/rsacalc/index)
 [비제네르](https://www.guballa.de/vigenere-solver)
