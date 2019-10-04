@@ -6,3 +6,7 @@ DataStructure/DataStructure.sln
 DataStructure/LinkedList/LinkedList.vcxproj
 DataStructure/LinkedList/LinkedList.vcxproj.filters
 DataStructure/LinkedList/LinkedList.vcxproj.user
+DataStructure/LinkedList/ArrayLinkedList/ArrayLinkedList.vcxproj
+DataStructure/LinkedList/ArrayLinkedList/ArrayLinkedList.vcxproj.filters
+DataStructure/LinkedList/ArrayLinkedList/ArrayLinkedList.vcxproj.user
+DataStructure/.vs/DataStructure/v16/ipch/AutoPCH/2c8cd0d75fed5cd0/ARRAYLINKEDLIST.ipch
