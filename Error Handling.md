@@ -12,6 +12,12 @@ apt-get install build-essential linux-headers-generic
 
 
 
+## git bash copy
+
+[복붙이 안먹힐때, 직접하기](https://superuser.com/questions/670867/why-do-i-sometimes-get-sh-302-211-command-not-found-in-xterm-sh)
+
+
+
 ## about type
 
 uchar : 1byte  / uint8_t : 1bite
