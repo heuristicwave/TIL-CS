@@ -61,14 +61,22 @@ static int dump_info(void)
 	close(fd); 
 	return -1;
     } else if (ret == 0){
+	FILE *fp;
+	fp = fdopen(fd, "r"); // fd -> fp
+	if (fp == NULL) {
+	    printf("fdopen fail\n");
+	    close(fd);
+	    return -1;	
+	}
+	printf("file position = %ld\n", ftell(fp));
+	fclose(fp);
 	break;    
     } else if (ret != sizeof(struct person)){
 	perror("read error(partial read)\n");
 	close(fd); 
 	return -1;
-    }
-
-    printf("name %s, age %d\n", p.name, p.age );
+	}
+    	printf("name %s, age %d\n", p.name, p.age );
     } while(1);
 
     close(fd);
