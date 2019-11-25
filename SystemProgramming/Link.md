@@ -12,5 +12,8 @@ $ stat hello_world # 링크 정보 확인
 ```shell
 # Soft Link
 $ ln -s hello_world hello_hardlinked
+
+# ls -al
+# ==> lrwxrwxrwx
 ```
 
