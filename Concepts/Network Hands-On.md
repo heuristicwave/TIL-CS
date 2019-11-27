@@ -20,7 +20,7 @@ nslookup naver.com
 
 Preamble : 777 감청부대
 
-sos : 스스스돈돈돈스스스
+sos : 스스스돈돈돈스스스c
 
 v : 돈돈돈스
 
@@ -46,7 +46,7 @@ v : 돈돈돈스
 
 
 
-##### packet.c
+##### packet.c					
 
 ```c
 #include <stdint.h>
