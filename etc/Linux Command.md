@@ -74,3 +74,18 @@ date
 
 #### [update  안될때](https://unix.stackexchange.com/questions/429729/apt-get-update-error-in-kali-linux-after-dist-upgrade)
 
+
+
+### nslookup
+
+- hostname의 해당 ip를 알려주는 명령어(DNS에 대하여 서비스)
+- 윈도우와 리눅스 모두 사용가능
+- ANY옵션은 호스트 관련 모든 레코드 정보 확인
+
+
+
+### man
+
+https://withcoding.com/90
+
+검색 /keyword
