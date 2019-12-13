@@ -109,9 +109,17 @@ if(!bResult) goto end;
 
 원하는 위치의 DLL에서 분석하기
 
+
+
+**OLLYDBG**
+
 Option -> debugging options -> break_on_new_module(DLL)
 
 해당위치 진입 후, BP설정 -> 다시 옵션 풀기
+
+**x96**
+
+[Options] -> [Preferences] -> [Event] -> [Check: Dll Load / Dll Entry]
 
 
 
