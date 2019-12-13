@@ -8,12 +8,12 @@
 
 #define FIFO_FILENAME	"./testfifo"
 
-static void print_usage(char *progname) {
+static void print_usage (char *progname) {
     printf("%s (w|r)\n", progname);
     return;
 }
 
-static int do_reader(void) {
+static int do_reader (void) {
     int fd;
     char buf[128];
 
@@ -32,7 +32,7 @@ static int do_reader(void) {
     return 0;
 }
 
-static int do_writer(void) {
+static int do_writer (void) {
     int fd;
     char buf[128];
 
