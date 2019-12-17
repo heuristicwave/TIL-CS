@@ -16,7 +16,7 @@ typedef struct {
 	Node* crnt;		// 선택한 노드에 대한 포인터
 } List;
 
-void Initialize(List* list)	// 연결리스트 초기화
+void Initialize(List *list)	// 연결리스트 초기화
 
 // 함수 compare로 x와 같은 노드 검색
 Node* search(List* list, const Member* x, int compare(const Member* x, const Member* y))
