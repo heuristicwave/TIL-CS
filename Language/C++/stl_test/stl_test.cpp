@@ -39,7 +39,7 @@ void vector_test() {
 void list_test() {
 	list<uint64_t> l;
 
-	l.push_back(1);
+    l.push_back(1); // new(24) : include (prev + next)
 	l.push_back(2);
 	l.push_back(3);
 	l.push_back(4);
@@ -57,7 +57,7 @@ void list_test() {
 void set_test() {
 	set<uint64_t> s;
     // binary search 40byte => big O log n
-    // 8+8+8+8+8(need 5 pointers) : previous + next + left + right +
+    // 8+8+8+8+8(need 5 pointers) : previous + next + left + right
     s.insert(1);    // 40 byte
 	s.insert(2);
 	s.insert(3);
@@ -96,7 +96,7 @@ void unordered_set_test() {
     // hashmap in Java
     // get info bucket index size : .bucket_count (increase prime num)
 
-    us.insert(1); cout << us.bucket_count() << endl;
+    us.insert(1); cout << us.bucket_count() << endl;    // allocate 16 : pointer & key
     us.insert(2); cout << us.bucket_count() << endl;
     us.insert(3); cout << us.bucket_count() << endl;
     us.insert(4); cout << us.bucket_count() << endl;
@@ -114,7 +114,7 @@ void unordered_set_test() {
 void unordered_map_test() {
 	unordered_map<uint64_t, uint64_t> um;
 
-    um[1] = 100;    // alocate 24 byte
+    um[1] = 100;    // alocate 24 byte key, value & pointer 8+8+8
 	um[2] = 200;
 	um[3] = 300;
 	um[4] = 400;
@@ -131,14 +131,14 @@ void unordered_map_test() {
 
 int main()
 {
-//    foo();
+    foo();
     gmem_set_verbose(true);
 //    void *temp = malloc(500);
 //    free(temp);
-  cout << "*** vector_test ***" << endl; vector_test();
-//  cout << "*** list_test ***" << endl; list_test();
-//  cout << "*** set_test ***" << endl; set_test();
-//  cout << "*** map_test ***" << endl; map_test();
-//    cout << "*** unordered_set_test ***" << endl; unordered_set_test();
-//    cout << "*** unordered_map_test ***" << endl; unordered_map_test();
+    cout << "*** vector_test ***" << endl; vector_test();
+    cout << "*** list_test ***" << endl; list_test();
+    cout << "*** set_test ***" << endl; set_test();
+    cout << "*** map_test ***" << endl; map_test();
+    cout << "*** unordered_set_test ***" << endl; unordered_set_test();
+    cout << "*** unordered_map_test ***" << endl; unordered_map_test();
 }
