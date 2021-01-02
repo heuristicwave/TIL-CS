@@ -2,6 +2,10 @@
 
 ```python
 class FlightClass:	# Naming Convetion : CamelCase
+    
+    """ Class Docstring """
+    # docstring : 클래스가 어떤일을 하는지 알려줌
+    
     def number(self):
         return 'SN060'
     
