@@ -12,3 +12,4 @@ DataStructure/LinkedList/ArrayLinkedList/ArrayLinkedList.vcxproj.user
 DataStructure/.vs/DataStructure/v16/ipch/AutoPCH/2c8cd0d75fed5cd0/ARRAYLINKEDLIST.ipch
 Language/Python/PyQT/.vscode/settings.json
 DataStructure/.ipynb_checkpoints
+.DS_Store

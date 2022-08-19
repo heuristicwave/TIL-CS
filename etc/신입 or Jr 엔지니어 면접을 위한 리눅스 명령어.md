@@ -28,6 +28,8 @@
 - `-G` : 전송할 사이트 url 및 ip 주소
 - `-v` : SSL 정보 포함 (`curl -v https://www.google.com`)
 
+> EX) `curl -XGET localhost:80 -v`
+
 <br>
 
 ## 4. 도메인 조회를 하는 nslookup

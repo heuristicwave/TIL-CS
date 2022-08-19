@@ -32,8 +32,6 @@ ls > $(pwd)/quiz01.txt
 
 </details>
 
-<br>
-
 [💯 Answer](./LAB/quiz01.sh)
 
 <br>
