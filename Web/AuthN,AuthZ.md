@@ -17,6 +17,7 @@
 - [kakao developers, OIDC](https://developers.kakao.com/docs/latest/ko/kakaologin/common#oidc)
 - [OpenID Connect Spec](https://openid.net/specs/openid-connect-core-1_0.html)
 - [DaleSeo, 구글 OpenID Connect 사용법](https://www.daleseo.com/google-oidc/) : 실습 코드 제공
+- [k8s 인증 완벽이해 #3 - OpenID Connect](https://coffeewhale.com/kubernetes/authentication/oidc/2020/05/04/auth03/) : 쿠버네티스 인증을 설명하는 글이지만, OIDC를 이해하기 위해 아주 좋은 글
 
 
 
