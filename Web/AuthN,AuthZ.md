@@ -1,6 +1,8 @@
-## SSO
+## SSO(SAML & OAuth 2.0)
 
-- [NAVER WORKS Developers, SSO 개요](https://developers.worksmobile.com/kr/document/2001001?lang=ko) : SAML, OAuth 2.0 설명
+- [SAML vs. OAuth: Comparison and Differences](https://www.okta.com/identity-101/saml-vs-oauth/) : SAML, OAuth 2.0 동작 원리 설명
+- [NAVER WORKS Developers, SSO 개요](https://developers.worksmobile.com/kr/document/2001001?lang=ko) : 네이버 웍스에서 SAML, OAuth 2.0 구현 방법 소개
+- [OASIS, SAML V2.0 Technical Overview](https://www.oasis-open.org/committees/download.php/27819/sstc-saml-tech-overview-2.0-cd-02.pdf)
 
 
 
